@@ -13,9 +13,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
 }
-.hero-text {
-  margin-left: 5%;
-}
 .hero {
   height: 90vh;
 }
