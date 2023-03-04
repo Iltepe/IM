@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vezbe</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/063ec60246.js" crossorigin="anonymous"></script>
+
+
+  <!-- Ostali tagovi ovdje -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  </head>
+  <body>
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top position-relative">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand me-auto" href="#" style="margin-left: 5%;">I.M.</a>
+
+          <!-- Hamburger menu -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Linkovi -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav ms-auto" style="margin-right: 10%;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Taman overlay -->
+        <div class="position-absolute w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5); z-index: -1;"></div>
+      </nav>
+      <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="position-relative">
+        <div class="container-fluid h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-md-6 hero-text animate__animated animate__fadeInLeft">
+              <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+                <style>
+                .small {
+                  font: italic 13px sans-serif;
+                  fill: #3b434a;
+                }
+                .heavy {
+                  font: bold 30px sans-serif;
+                  fill: #3b434a;
+                }
+
+                .Rrrrr {
+                  font: italic 40px serif;
+                  fill: #FF6584;
+                }
+                </style>
+
+                <text x="1" y="10" class="small">Build your</text>
+                <text x="30" y="40" class="heavy">brand</text>
+                <text x="35" y="55" class="small">on the</text>
+                <text x="65" y="75" class="Rrrrr">Web!</text>
+              </svg>
+
+              <h1 class="ivana">Ivana Miljkovic</h1>
+              <p class="web">Web Developer</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="images">
+                <img src="pic/2.png" class="shape img-fluid">
+                <img src="pic/1.png" class="horse img-fluid">
+                <div id="social-links">
+                  <a href="https://www.facebook.com/profile.php?id=100090395499903" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://www.instagram.com/_iltepe_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://github.com/Iltepe" target="_blank"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/ivana-miljkovi%C4%87-73990923a/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="about-me" style="background-color: #7563af;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 section-title">
+            <span id="about-me">About Me</span>
+            <h2 class="text-center" >Hello there!</h2>
+            <p class="about-me-text" style="color: #fff;">I am a graduated economist with work experience in the field,<br>
+              but with a desire to improve my knowledge and skills.<br>
+              <br>
+              My passion for learning and constant improvement are key in my career and <br>
+              I always strive to develop my skills and acquire new knowledge in the field of<br>
+              web development.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <!-- CARD -->
+    <section id="my-skills" class="bg-light py-5" >
+      <div class="container">
+
+        <div class="row kartice">
+          <div class="col-md-4">
+            <div id="card-vh" class="card">
+              <div class="card-body">
+                <div class="col-md-12 text-center mb-5">
+                  <img src="pic/3.png" alt="Slika vestina" class="img-fluid rounded-circle" style="max-width:50%;">
+                  <h2 class="mt-3">Designer</h2>
+                  <p class="lead">I take pleasure in crafting elegant and imaginative websites that exude a professional and polished appearance.</p>
+                </div>
+                <div class="">
+                  <h5 class="card-title">Things I enjoy designing:</h5>
+                  <p class="card-text">UX, UI, Web, Logos</p>
+                  <ul>
+                    <li class="li">Design Tools:</li>
+                    <li>Figma</li>
+                    <li>Font Awesome</li>
+                    <li>Webflow</li>
+                    <li>Canva</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div id="card-vh" class="card">
+              <div class="card-body">
+                <div class="col-md-12 text-center mb-5">
+                <img src="pic/7.png" alt="Slika vestina" class="img-fluid rounded-circle" style="max-width:52%;">
+                <h2 class="mt-3">Frontend Developer</h2>
+                <p class="lead">Crafting things from scratch is my passion, and I take pleasure in bringing ideas to life through web development.</p>
+              </div>
+              <h5 class="card-title">Languages I speak:</h5>
+              <p class="card-text">HTML, JS, Slim, CSS, Node.js, Git</p>
+              <ul>
+                <li class="li">Dev Tools:</li>
+                <li>Github</li>
+                <li>Bootstrap</li>
+                <li>Atom</li>
+                <li>ChatGBT</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div id="card-vh" class="card">
+            <div class="card-body">
+              <div class="col-md-12 text-center mb-5">
+                <img src="pic/6.png" alt="Slika vestina" class="img-fluid rounded-circle" style="max-width:42%;">
+                <h2 class="mt-3">Marketing</h2>
+                <p class="lead">I excel at creating persuasive marketing campaigns that captivate audiences and drive results.</p>
+              </div>
+              <h5 class="card-title">Digital marketing</h5>
+              <p class="card-text">I have solid knowledge of SMM </p>
+              <ul>
+                <li class="li">Type of:</li>
+                <li>SMM</li>
+                <li>Social marketing</li>
+                <li>Email marketing</li>
+                <li>Content marketing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8 section-title">
+          <span id="about-me">Portfolio</span>
+          <h2 class="text-center" style="color: #7563AF">Hello there!</h2>
+          <p class="about-me-text" style="color: #2B1E33;">Here are a few past design projects I've worked on. Want to see more?</p> <br>
+          <a href="mailto:miljkovic.iva92@gmail.com" class="btn btn-primary rounded-pill">Email me</a>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="background-image: url(pic/8.png)">
+              <div class="card-img-top">
+                <a href="#" class="card-link lead">MIRisna</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card" style="background-image: url(pic/9.png)">
+              <div class="card-img-top">
+                <a href="https://protfolioim.com/" class="card-link lead" target="_blank">JUGOVINA vodenica</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card" style="background-image: url(pic/5.png)">
+              <div class="card-img-top">
+                <a href="#" class="card-link lead">Link kartice</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card" style="background-image: url(pic/4.png)">
+              <div class="card-img-top">
+                <a href="#" class="card-link lead">Link kartice</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card" style="background-image: url(pic/5.png)">
+              <div class="card-img-top">
+                <a href="#" class="card-link lead">Link kartice</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card" style="background-image: url(pic/4.png)">
+              <div class="card-img-top">
+                <a href="#" class="card-link lead">Link kartice</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARALAX -->
+  <section>
+    <div class="firstimg">
+      <div class="text">
+        <span class="border"> My resume</span>
+      </div>
+    </div>
+
+    <section class="section section-dark">
+      <h2 class="ivana">Vision of web development</h2>
+      <p>I am confident that together we can create something amazing.
+         My vision for web development is not limited to just creating websites,
+          but to creating an experience that will stay with users.
+          I want to create websites that are more than just a place
+           to search for information - I want to create a digital world where
+            users feel welcome and can express themselves in their own way.
+             This means creating pages that are visually stunning, intuitive to use,
+              and that use the latest technologies to adapt to users' needs..</p>
+    </section>
+
+    <div class="secondimg">
+      <div class="text">
+
+      </div>
+    </div>
+
+    <section class="section section-dark">
+      <h2 class="ivana">Vision of web development</h2>
+      <p>
+        Using artificial intelligence and machine learning, we can create websites
+         that "learn" about users to improve their experience and personalize the service.
+         I want to create an online world where users feel like they are part of something
+          bigger - a place where they can connect with other users, share their ideas,
+           and create something together.
+      </p>
+    </section>
+
+    <div class="thirdimg">
+      <div class="text">
+
+      </div>
+    </div>
+
+    <section class="section section-dark">
+      <h2 class="ivana">Vision of web development</h2>
+      <p>
+        Imagine a place where you feel at home, where you can find everything you need,
+         whether it's entertainment, information, or business opportunities.
+          That is the vision I have for web development - creating an online world
+          that will amaze you and always attract your attention. And I look forward to
+           being part of that creation process and helping you achieve your ambitions.
+      </p>
+    </section>
+
+    <div class="forthimg">
+      <div class="text">
+        <span class="border">
+          Contact me
+        </span>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--kontakt sekcija -->
+
+  <section id="contact">
+    <h2 class="ivana kontakt">Do you have a question or comment? Contact me via email or phone.</h2>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 order-md-1">
+            <div class="card mb-4 p-4 text-center animate__animated" style="opacity: 0;">
+              <div class="card-body">
+                <i class="fa fa-envelope fa-5x mb-3"></i>
+                <h5 class="card-title">Email:</h5>
+                <p class="card-text"><a href="mailto:miljkovic.iva92@gmail.com">miljkovic.iva92@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="card mb-4 p-4 text-center animate__animated" style="opacity: 0;">
+              <div class="card-body ">
+                <i class="fa fa-phone fa-5x mb-3"></i>
+                <h5 class="card-title">Telefon:</h5>
+                <p class="card-text"><a href="tel:+1234567890">+381 64 580 69 89</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 order-md-2">
+            <div class="p-4">
+              <img src="pic/iltepe.png" alt="QR kod za Instagram" class="iltepe-img img-fluid animate__animated" style="opacity: 0;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  <script>
+    const animateOnScroll = (element) => {
+      const elementPosition = element.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (elementPosition < windowHeight) {
+        if (element.closest('.order-md-1')) {
+          element.classList.add('animate__slideInLeft');
+        } else if (element.closest('.order-md-2')) {
+          element.classList.add('animate__slideInRight');
+        }
+        element.style.opacity = 1;
+      }
+    };
+
+    const animatedElements = document.querySelectorAll('.animate__animated');
+    animatedElements.forEach(element => {
+      animateOnScroll(element);
+
+      window.addEventListener('scroll', () => {
+        animateOnScroll(element);
+      });
+    });
+  </script>
+
+
+
+
+  <!-- footer -->
+    <div class="wrapper">
+      <a href="#home" class="scroll-to-top">
+        <img src="pic/20.png" alt="back-to-top" class="back-to-top">
+      </a>
+    </div>
+  <footer class="text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="row">
+
+            <div class="col-md-12">
+              <nav class="social-links">
+                <ul class="list-unstyled">
+                  <li><a href="https://www.facebook.com/profile.php?id=100090395499903" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="https://www.instagram.com/_iltepe_/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/ivana-miljkovi%C4%87-73990923a/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://github.com/Iltepe"><i class="fa fa-github"></i></a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="col-md-12">
+              <h2 class="ivana footer-heading mb-4">Ivana Miljković</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>Copyright &copy; 2023 <b>I.M.</b> </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="script.js" charset="utf-8"></script>
+
+</body>
+</html>
